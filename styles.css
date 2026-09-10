@@ -93,7 +93,7 @@ em.yes{font-style:italic;font-weight:400}
 .case .who{font-family:var(--sans);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--on-navy-dim)}
 .case h3{font-size:1.5rem}
 .case p{color:var(--on-navy-dim)}
-.case .art{aspect-ratio:16/7;background:repeating-linear-gradient(135deg,rgba(255,255,255,.06) 0 10px,transparent 10px 20px);border:1px dashed rgba(255,255,255,.25);display:grid;place-items:center;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--on-navy-dim)}
+.case .art{aspect-ratio:16/7;width:100%;height:auto;object-fit:cover;display:block;max-width:100%}
 @media (max-width:640px){.proof-grid{grid-template-columns:1fr}}
 
 /* offer */
