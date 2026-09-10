@@ -3,13 +3,13 @@
   --ink:#0E1319; --grey:#5C6470; --white:#FFFFFF;
   --navy:#0B1A38; --navy-2:#122A5C; --on-navy:#E8EEF8; --on-navy-dim:#AAB8D3;
   --serif:"Fraunces",Georgia,"Times New Roman",serif;
-  --sans:"Archivo",-apple-system,"Helvetica Neue",Arial,sans-serif;
+  --sans:"Montserrat",-apple-system,"Helvetica Neue",Arial,sans-serif;
   --wrap:1120px; --measure:62ch;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:1rem;line-height:1.65;-webkit-font-smoothing:antialiased}
 a{color:var(--blue)}
 a:focus-visible,button:focus-visible{outline:3px solid var(--blue-hover);outline-offset:3px}
 h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.1;margin:0;text-wrap:balance;letter-spacing:-.01em}
