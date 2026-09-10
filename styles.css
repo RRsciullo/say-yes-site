@@ -51,7 +51,7 @@ em.yes{font-style:italic;font-weight:400}
 
 /* hero */
 .hero{background:var(--paper);padding:0}
-.hero .frame{position:relative;width:100%;color:var(--ink);background:#E9ECF0 url(assets/hero-paper-planes.jpg) center 100%/cover no-repeat;min-height:clamp(460px,52vw,680px);display:grid;align-items:center;padding-block:clamp(3rem,7vw,5.5rem)}
+.hero .frame{position:relative;width:100%;color:var(--ink);background:#E9ECF0 url(assets/hero-paper-planes.jpg) center 75%/cover no-repeat;min-height:clamp(460px,52vw,680px);display:grid;align-items:center;padding-block:clamp(3rem,7vw,5.5rem)}
 .hero .frame::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(242,245,250,.94) 0%,rgba(242,245,250,.75) 45%,rgba(242,245,250,.15) 100%)}
 .hero .inner{position:relative;width:100%}
 .hero .copy{position:relative;display:grid;gap:1.25rem;max-width:34rem}
