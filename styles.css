@@ -155,11 +155,11 @@ em.yes{font-style:italic;font-weight:400}
 .faq summary::after{content:"+";font-family:var(--sans);font-weight:400;color:var(--blue);font-size:1.5rem;line-height:1}
 .faq details[open] summary::after{content:"\2212"}
 .faq details p{color:var(--grey);padding:0 0 1.5rem;max-width:var(--measure)}
-.story-wrap{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(2rem,5vw,4rem);align-items:start}
+.story-wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(2rem,5vw,4rem);align-items:start}
 .story-photo{margin:0;grid-column:2;grid-row:1}
-.story-photo img,.story-photo .slot{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;max-width:100%}
+.story-photo img,.story-photo .slot{width:100%;height:auto;display:block;max-width:100%}
 .story-photo .slot{background:var(--paper);border:1px dashed var(--hair);display:grid;place-items:center;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--grey);text-align:center;padding:1rem}
-@media (max-width:760px){.story-wrap{grid-template-columns:1fr}.story-photo{grid-column:1;grid-row:auto}.story-photo img,.story-photo .slot{aspect-ratio:4/3}}
+@media (max-width:760px){.story-wrap{grid-template-columns:1fr}.story-photo{grid-column:1;grid-row:auto}}
 .story{max-width:var(--measure);display:grid;gap:1.5rem;font-size:1.125rem;line-height:1.7}
 .story p{color:var(--ink)}
 .story .aside{color:var(--grey)}
