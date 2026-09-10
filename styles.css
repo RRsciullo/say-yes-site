@@ -106,7 +106,7 @@ em.yes{font-style:italic;font-weight:400}
 
 /* why */
 .why .wrap{display:grid;grid-template-columns:200px minmax(0,1fr);gap:2.5rem;align-items:start}
-.headshot{width:200px;aspect-ratio:1;background:var(--paper);border:1px dashed var(--hair);display:grid;place-items:center;text-align:center;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--grey);padding:1rem}
+.headshot{width:200px;height:auto;aspect-ratio:1;object-fit:cover;display:block;max-width:100%}
 .why p{color:var(--grey);max-width:var(--measure)}
 .why a.more{font-weight:600;text-decoration:none}
 .why a.more:hover{text-decoration:underline;text-underline-offset:.3em}
@@ -158,7 +158,9 @@ em.yes{font-style:italic;font-weight:400}
 .story .aside{color:var(--grey)}
 .moves-inline{font-family:var(--serif);font-weight:600;font-size:clamp(1.6rem,1.2rem + 1.6vw,2.25rem);line-height:1.3;color:var(--ink)}
 .moves-inline em{color:var(--blue);font-style:normal}
-.about-art{aspect-ratio:16/6;background:var(--white);border:1px dashed var(--hair);display:grid;place-items:center;text-align:center;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--grey);padding:1rem}
+.about-art{margin:0;background:var(--white);padding:clamp(1.5rem,4vw,3rem);display:grid;justify-items:center;gap:1rem}
+.about-art img{max-width:100%;height:auto;max-height:600px;width:auto;display:block}
+.about-art figcaption{font-size:.85rem;color:var(--grey);text-align:center;max-width:52ch}
 .bio{display:grid;grid-template-columns:160px minmax(0,1fr);gap:2rem;align-items:start;border-top:1px solid var(--hair);padding-top:2.5rem;margin-top:3rem}
 .bio .headshot{width:160px}
 .bio p{color:var(--grey);max-width:var(--measure)}
