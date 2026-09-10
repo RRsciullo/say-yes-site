@@ -61,9 +61,10 @@ em.yes{font-style:italic;font-weight:400}
 @media (max-width:820px){.hero .frame{background-position:center 100%}.hero .frame::before{background:linear-gradient(180deg,rgba(242,245,250,.96) 0%,rgba(242,245,250,.85) 60%,rgba(242,245,250,.3) 100%)}}
 
 /* reframe */
+.reframe{background:var(--blue);color:#fff;border-top:0}
 .reframe .wrap{display:grid;gap:2.5rem;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:start}
-.reframe h2{font-size:clamp(2rem,1.4rem + 2.6vw,3rem)}
-.reframe p{color:var(--grey);font-size:1.125rem;max-width:var(--measure)}
+.reframe h2{font-size:clamp(2rem,1.4rem + 2.6vw,3rem);color:#fff}
+.reframe p{color:#D6E1F5;font-size:1.125rem;max-width:var(--measure)}
 @media (max-width:760px){.reframe .wrap{grid-template-columns:1fr}}
 
 /* moves */
