@@ -90,7 +90,7 @@ em.yes{font-style:italic;font-weight:400}
 /* proof */
 .proof-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}
 .case{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);padding:2.25rem 2rem;display:grid;gap:1rem;align-content:start}
-.case .who{font-family:var(--sans);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--on-navy-dim)}
+.case .who{font-family:var(--sans);font-size:.85rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--on-navy)}
 .case h3{font-size:1.5rem}
 .case p{color:var(--on-navy-dim)}
 .case .art{aspect-ratio:16/7;width:100%;height:auto;object-fit:cover;display:block;max-width:100%}
