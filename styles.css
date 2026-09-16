@@ -212,3 +212,18 @@ form.f textarea{min-height:140px;resize:vertical}
 form.f button{justify-self:start;cursor:pointer}
 @media (max-width:760px){.contact .wrap{grid-template-columns:1fr}}
 .nav a.on{color:var(--blue);text-decoration:underline;text-underline-offset:.3em}
+/* legal pages */
+.legal-doc{max-width:var(--measure);display:grid;gap:1.25rem}
+.legal-doc .updated{color:var(--grey);font-size:.9rem}
+.legal-doc h2{font-size:1.5rem;margin-top:1.5rem}
+.legal-doc h3{font-size:1.125rem}
+.legal-doc p{color:var(--ink);font-size:1.0625rem}
+.legal-doc ul{list-style:none;margin:0;padding:0;display:grid;gap:.6rem}
+.legal-doc ul li{position:relative;padding-left:1.15rem;color:var(--ink);font-size:1.0625rem}
+.legal-doc ul li::before{content:"";position:absolute;left:0;top:.55em;width:.4rem;height:.4rem;background:var(--blue)}
+.legal-doc a{font-weight:500}
+/* 404 */
+.notfound{text-align:center}
+.notfound .wrap{display:grid;gap:1.5rem;justify-items:center;max-width:44rem}
+.notfound .code{font-family:var(--serif);font-weight:600;font-size:clamp(3rem,3vw + 3rem,6rem);color:var(--blue);line-height:1}
+.notfound p{color:var(--grey);font-size:1.125rem;max-width:44ch}
