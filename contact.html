@@ -51,16 +51,48 @@
       <p><a class="email" href="mailto:becky@sayyescomms.com">becky@sayyescomms.com</a></p>
       <p class="where">State College, Pennsylvania</p>
     </div>
-    <form class="f" id="contact-form" action="#" method="post">
+    <form class="f" id="contact-form" action="https://formspree.io/f/mbgljwld" method="post">
       <label for="cf-name">Name<input id="cf-name" name="name" type="text" autocomplete="name" required></label>
       <label for="cf-email">Email<input id="cf-email" name="email" type="email" autocomplete="email" required></label>
       <label for="cf-msg">What are you working on?<textarea id="cf-msg" name="message" required></textarea></label>
       <button class="btn" type="submit">Send</button>
     </form>
+    <div class="f-success" id="contact-success" hidden>
+      <p>Got it, thanks. I'll be in touch soon.</p>
+    </div>
   </div>
 </section>
 
 </main>
+
+<script>
+(function () {
+  var form = document.getElementById('contact-form');
+  var success = document.getElementById('contact-success');
+  if (!form) return;
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(function (response) {
+      if (response.ok) {
+        form.hidden = true;
+        success.hidden = false;
+      } else {
+        response.json().then(function (data) {
+          alert((data.errors || []).map(function (e) { return e.message; }).join(', ') || 'Something went wrong. Please email becky@sayyescomms.com directly.');
+        }).catch(function () {
+          alert('Something went wrong. Please email becky@sayyescomms.com directly.');
+        });
+      }
+    }).catch(function () {
+      alert('Something went wrong. Please email becky@sayyescomms.com directly.');
+    });
+  });
+})();
+</script>
 
 <footer class="site-footer">
   <div class="wrap">

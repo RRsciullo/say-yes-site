@@ -210,6 +210,7 @@ form.f input,form.f textarea{font:inherit;font-family:var(--sans);padding:.8rem 
 form.f input:focus,form.f textarea:focus{outline:2px solid var(--blue);outline-offset:1px;border-color:var(--blue)}
 form.f textarea{min-height:140px;resize:vertical}
 form.f button{justify-self:start;cursor:pointer}
+.f-success{background:var(--white);border:1px solid var(--hair);padding:2rem;font-family:var(--serif);font-size:1.2rem}
 @media (max-width:760px){.contact .wrap{grid-template-columns:1fr}}
 .nav a.on{color:var(--blue);text-decoration:underline;text-underline-offset:.3em}
 /* legal pages */
