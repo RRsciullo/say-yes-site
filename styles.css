@@ -198,12 +198,16 @@ em.yes{font-style:italic;font-weight:400}
 .bio .headshot{width:160px}
 .bio p{color:var(--grey);max-width:var(--measure)}
 @media (max-width:640px){.bio{grid-template-columns:1fr}}
-.contact .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,1fr);gap:clamp(2rem,5vw,4rem);align-items:start}
+.contact .wrap{display:grid;gap:2.5rem;max-width:640px}
 .contact .lead{display:grid;gap:1.25rem}
 .contact .lead p{color:var(--grey);max-width:var(--measure);font-size:1.125rem}
 .contact .email{font-weight:500;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--hair)}
 .contact .email:hover{border-color:var(--blue);color:var(--blue)}
 .contact .where{color:var(--grey);font-size:.95rem}
+.contact h2{font-family:var(--serif);font-size:1.4rem;margin:0 0 .5rem}
+.booking-embed{border:1px solid var(--hair);background:var(--white);padding:1.5rem}
+.booking-embed iframe{display:block}
+.booking-fallback{margin:.75rem 0 0;font-size:.9rem;color:var(--grey)}
 form.f{background:var(--white);border:1px solid var(--hair);padding:2rem;display:grid;gap:1.25rem}
 form.f label{display:grid;gap:.4rem;font-weight:600;font-size:.9rem}
 form.f input,form.f textarea{font:inherit;font-family:var(--sans);padding:.8rem .9rem;border:1px solid var(--hair);background:var(--paper);color:var(--ink);width:100%}
@@ -211,7 +215,6 @@ form.f input:focus,form.f textarea:focus{outline:2px solid var(--blue);outline-o
 form.f textarea{min-height:140px;resize:vertical}
 form.f button{justify-self:start;cursor:pointer}
 .f-success{background:var(--white);border:1px solid var(--hair);padding:2rem;font-family:var(--serif);font-size:1.2rem}
-@media (max-width:760px){.contact .wrap{grid-template-columns:1fr}}
 .nav a.on{color:var(--blue);text-decoration:underline;text-underline-offset:.3em}
 /* legal pages */
 .legal-doc{max-width:var(--measure);display:grid;gap:1.25rem}
