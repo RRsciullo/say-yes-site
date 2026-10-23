@@ -113,6 +113,11 @@ em.yes{font-style:italic;font-weight:400}
 .why .wrap{display:grid;grid-template-columns:200px minmax(0,1fr);gap:2.5rem;align-items:start}
 .headshot{width:200px;height:auto;aspect-ratio:1;object-fit:cover;display:block;max-width:100%}
 .why p{color:var(--grey);max-width:var(--measure)}
+.case a.more{color:#fff;font-weight:600;text-decoration:none;border-bottom:1px solid var(--on-navy-dim);justify-self:start}
+.case a.more:hover{border-color:#fff}
+.see{margin-top:1.5rem;font-weight:600}
+.see a{text-decoration:none}
+.see a:hover{text-decoration:underline;text-underline-offset:.3em}
 .why a.more{font-weight:600;text-decoration:none}
 .why a.more:hover{text-decoration:underline;text-underline-offset:.3em}
 @media (max-width:640px){.why .wrap{grid-template-columns:1fr}.headshot{width:140px}}
@@ -178,10 +183,18 @@ em.yes{font-style:italic;font-weight:400}
 .story{max-width:var(--measure);display:grid;gap:1.5rem;font-size:1.125rem;line-height:1.7}
 .story p{color:var(--ink)}
 .story .aside{color:var(--grey)}
+.story-row.top{align-items:start}
+.story-side{display:grid;gap:2.5rem}
+.story-side .story-photo{grid-column:auto;grid-row:auto}
+.story-side .quote p{font-size:clamp(1.15rem,1rem + .5vw,1.35rem)}
+.quote{margin:0;padding:0 0 0 1.5rem;border-left:3px solid var(--blue);display:grid;gap:.75rem}
+.quote p{font-family:var(--serif);font-size:clamp(1.3rem,1.1rem + .8vw,1.6rem);line-height:1.4;color:var(--ink);margin:0}
+.quote cite{font-style:normal;font-size:.85rem;font-weight:600;letter-spacing:.06em;color:var(--grey)}
 .moves-inline{font-family:var(--serif);font-weight:600;font-size:clamp(1.6rem,1.2rem + 1.6vw,2.25rem);line-height:1.3;color:var(--ink)}
 .moves-inline em{color:var(--blue);font-style:normal}
 .bio{display:grid;grid-template-columns:160px minmax(0,1fr);gap:2rem;align-items:start}
 /* blue bands */
+.section.blue.tight{padding-block:clamp(2.25rem,5vw,3.75rem)}
 .section.blue,.masthead.blue{background:var(--blue);color:#fff;border-top:0;border-bottom:0}
 .blue h1,.blue h2{color:#fff}
 .blue .eyebrow,.blue p,.blue .lede,.blue .story p{color:#D6E1F5}
